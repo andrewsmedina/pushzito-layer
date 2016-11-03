@@ -6,7 +6,7 @@ app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.render('index');
 });
 
 var port = process.env.PORT || 3000;
